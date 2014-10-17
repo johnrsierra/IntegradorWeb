@@ -1,9 +1,8 @@
-define(['component/_cartMasterComponent'], function (_CartMasterComponent) {
-	App.Component.CartMasterComponent = _CartMasterComponent.extend({
+define(['component/_cartMasterComponent'],function(_CartMasterComponent) {
+    App.Component.CartMasterComponent = _CartMasterComponent.extend({
 		postInit: function(){
-			//Escribir aquí las instrucciones que desea ejecutar al inicializar el componente
+			//Escribir en este servicio las instrucciones que desea ejecutar al inicializar el componente
 		},
-		
 		addItems: function (params) {
 			var list = this.itemComponent.getRecords();
 			for (var idx in params) {
@@ -17,6 +16,7 @@ define(['component/_cartMasterComponent'], function (_CartMasterComponent) {
 				}
 			}
 		}
-	});
-	return App.Component.CartMasterComponent;
+    });
+
+    return App.Component.CartMasterComponent;
 });
